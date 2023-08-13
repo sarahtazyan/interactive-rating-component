@@ -1,0 +1,50 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: hsl(216, 12%, 8%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Use viewport height instead of percentage */
+}
+
+.box-container {
+  width: 300px; /* adjust the width to your desired size */
+  height: 300px; /* adjust the height to your desired size */
+  background-color: hsl(213, 19%, 18%); /* set the background color */
+  border: 1px solid hsl(213, 19%, 18%); /* add a border if needed */
+  background-color:  hsl(213, 19%, 18%);
+  padding: 20px;
+}
+.circle {
+  width: 40px; /* adjust the width of the circle */
+  height: 40px; /* adjust the height of the circle */
+  border-radius: 50%; /* make it a circle by setting border-radius to 50% */
+  background-color: hsl(211, 19%, 22%); /* set the background color of the circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  font-size: 16px; /* adjust the size of the icon */
+  color:  hsl(25, 97%, 53%); /* adjust the color of the icon */
+  line-height: 40px;
+  text-align: center;
+}
+
+.box-container h1 {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+
+.attribution { 
+    font-size: 11px; text-align: center; }
+.attribution a { 
+        color: hsl(228, 45%, 44%); }
