@@ -11,7 +11,7 @@ html, body {
   height: 100vh; /* Use viewport height instead of percentage */
 }
 
-.box-container {
+.box-container, .box-container-t {
   width: 300px; /* adjust the width to your desired size */
   height: 300px; /* adjust the height to your desired size */
   background-color: hsl(213, 19%, 18%); /* set the background color */
@@ -67,26 +67,36 @@ html, body {
     color: hsl(217, 12%, 63%);
     font-family: 'Overpass', sans-serif;
   }
+  #b1.selected,
+  #b1:hover {
+    background-color: hsl(216, 12%, 8%);
+    color: hsl(0, 0%, 100%);
+  }
+  
+  #b2.selected,
+  #b2:hover {
+    background-color: hsl(213, 19%, 22%);
+    color: hsl(0, 0%, 100%);
+  }
+  
+  #b3.selected,
+  #b3:hover {
+    background-color: hsl(216, 12%, 54%);
+    color: hsl(0, 0%, 100%);
+  }
+  
+  #b4.selected,
+  #b4:hover {
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+  }
+  
+  #b5.selected,
   #b5:hover {
     background-color: hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%);
   }
-  #b4:hover {
-    background-color: hsl(217, 12%, 63%);
-    color:hsl(0, 0%, 100%)
-  }
-  #b3:hover {
-    background-color: hsl(216, 12%, 54%);
-    color:hsl(0, 0%, 100%)
-  }
-  #b2:hover {
-    background-color: hsl(213, 19%, 22%);
-    color:hsl(0, 0%, 100%)
-  }
-  #b1:hover {
-    background-color: hsl(216, 12%, 8%);
-    color:hsl(0, 0%, 100%)
-  }
+
   .submit-button-container {
     display: inline-block;
     width: 100%; /* Adjust the width percentage based on your needs */
@@ -108,8 +118,74 @@ html, body {
     background-color: hsl(0, 0%, 100%);
     color: hsl(25, 97%, 53%);
   }
+  .thank-you-img {
+    text-align: center;
+  }
+.thank-you-img img {
+    width: 50%;
+   
+}
+.round-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 
+
+}
+.round-text {
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: hsl(213, 19%, 22%);
+    color: hsl(25, 97%, 53%);
+    border-radius: 50px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    justify-content: center;
+}
+.box-container-t h1 {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400px;
+    font-size: 28px;
+    align-items: center;
+    padding-left: 70px;
+    padding-top: 10px;
+}
+.box-container-t p {
+    color: hsl(217, 12%, 63%);
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    text-align: center;
+
+}
+.container-t {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+footer {
+    color: hsl(217, 12%, 63%);
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    text-align: center;
+    position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px; /* Adjust this height as needed */
+  
+}
 .attribution { 
     font-size: 11px; text-align: center; }
 .attribution a { 
         color: hsl(228, 45%, 44%); }
+ 
